@@ -24,27 +24,39 @@ function App() {
     console.log(transcript);
   }
   return (
-      <div className="container">
-        <div className='heading'>        <h1>Speech To Text Converter</h1></div>
+      <div className="container-fluid">
+        <div className='heading'>       
+          <h1>Speech To Text Converter</h1>
+         </div>
       <br/>
-      <div className='main-content' >
-            {transcript}
-      </div>
-      <div >
-        <p style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>Microphone: {listening ? 'on' : 'off'}{listening? <VoiceWaves/> : ''}</p>
-      </div>
-      <div className='btn-style'>
-      <CopyToClipboard text={transcript} onCopy={()=>setCopied}>
-      <button onClick={handleCopied}>
-                        {copied ? 'Copied!' : 'Copy to clipboard'}
-                    </button>
-      </CopyToClipboard>
-     
-                            <button onClick={startListening}>Start Listening</button>
-        <button onClick={SpeechRecognition.stopListening}>Stop Listening</button>
-      
-      </div>
+      <div className='container'>
+          <div className='card shadow-lg z-5 rounded-4'>
+            <div className='card-body'>
+              <div className='main-content'>
+                      {transcript}
+              
+              </div>
+            </div>
+            <div className='card-footer'>
+                <div >
+                  <p style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>Microphone: {listening ? 'on' : 'off'}{listening? <VoiceWaves/> : ''}</p>
+                </div>
+            </div>
+          </div>
+          <div className='btn-style'>
+          
+          <CopyToClipboard text={transcript} onCopy={()=>setCopied}>
+                      <button className='btn btn-success' onClick={handleCopied}>
+                          {copied ? 'Copied!' : 'Copy to clipboard'}
+                      </button>
+        </CopyToClipboard>
+        <button className='btn btn-success' onClick={startListening}>Start Listening</button>
+          <button className='btn btn-success' onClick={SpeechRecognition.stopListening}>Stop Listening</button>
 
+        </div>
+
+      </div>
+      
       </div>
   );
 }

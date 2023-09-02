@@ -1,81 +1,38 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Libre+Baskerville&family=Merriweather:wght@700&family=Work+Sans&display=swap");
 
-* {
-  margin: 0;
+*{
+  margin:0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
-
 html {
   color: rgb(96 101 123);
 }
-
-body {
+body{
+  margin-top: 5%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: center;
   background: rgb(255 255 255);
 }
-
-.container {
-  padding: 30px;
-  margin-top: 80px;
-}
-
-h2 {
-  color: rgb(43 45 56);
+h2{
+  color: rgb(60, 61, 67) !important;
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
   letter-spacing: -0.2px;
   font-family: "Merriweather", serif;
-}
 
+}
 p {
-  max-width: 50rem;
-  text-align: center;
-  margin-top: 24px;
-  margin-bottom: 100px;
-}
-.heading{
-  text-align: center;
-}
-.main-content {
-  max-width: 50rem;
-  width: 100%;
-  min-height: 400px;
-  height: auto;
-  padding: 18px 18px 120px 18px;
-  position: relative;
-  resize: none;
-  box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
-  background: rgb(255 255 255);
-  border: 0.5px solid rgb(231 233 245);
-  border-radius: 16px;
-}
-
-.main-content:focus {
-  border: 0.3px solid rgb(43, 45, 56, 0.3);
-  outline: none;
-}
-
-p,
-.main-content {
   font-size: 18px;
   letter-spacing: 1px;
   word-spacing: 2px;
   line-height: 1.6;
 }
 
-.btn-style{
-  display: flex;
-
-}
-
-button {
-  /* position: absolute; */
+/* button{
   background: rgb(17 166 131);
   color: rgb(255 255 255);
   border-radius: 6px;
@@ -88,104 +45,112 @@ button {
   position: relative;
   margin-top: -80px;
   cursor: pointer;
+} */
+.heading{
+  text-align: center;
 }
+.btn-style{
+  display: flex;
+  text-align: center;
+  margin-top: 4vh;
+}
+button{
+  background: rgb(17 166 131) !important;
+  cursor: pointer !important;
+  padding: 2vh !important;
+  margin: auto !important;
+  height: 7vh;
+  border: none !important;
+  font-size: 18px !important;
+  letter-spacing: 1px !important;
+  padding: 16px 32px ;
 
+}
 button:focus,
 button:hover {
-  background: rgb(42, 201, 164);
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  background: rgb(42, 201, 164) !important;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
-.counter-container {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
+.card-body{
+  max-width: 50rem;
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  padding: 18px 18px 120px 18px;
+  resize: none;
+  box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
+  background: rgb(255 255 255);
+  border: 0.5px solid rgb(231 233 245);
+  border-radius: 16px;
 }
-
-@media screen and (max-width: 768px) {
-  .container {
-    margin-top: 20px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 16px;
-    word-spacing: normal;
-    margin-bottom: 40px;
-    margin-top: 15px;
-  }
-
-  .main-content {
-    /*border:1px solid*/
-    font-size: 16px;
-    word-spacing: normal;
-  }
-
-  button {
-    padding: 12px 28px;
-    font-size: 16px;
-    margin-top: -70px;
-  }
-
-  .counter-container {
-    flex-direction: column;
-  }
-
-  .counter-container p:first-child {
-    margin-bottom: 0;
-  }
+.card-body:focus {
+  border: 0.3px solid rgb(43, 45, 56, 0.3);
+  outline: none;
 }
 .wave-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wave{
-  width: 5px;
-  height: 40px;
-  background:linear-gradient(50deg, purple, white);
-  margin: 10px;
-  animation: wave 1s infinite linear;
+width: 0.5vh;
+height: 40px;
+background:linear-gradient(50deg, purple, white);
+margin: 1vh;
+animation: wave 1s infinite linear;
 }
 .wave:nth-child(2){
-  animation-delay: 0.1s;
+animation-delay: 0.1s;
 }
 .wave:nth-child(3){
-  animation-delay: 0.2s;
+animation-delay: 0.2s;
 }
 .wave:nth-child(4){
-  animation-delay: 0.3s;
+animation-delay: 0.3s;
 }
 .wave:nth-child(5){
-  animation-delay: 0.4s;
+animation-delay: 0.4s;
 }
 .wave:nth-child(6){
-  animation-delay: 0.5s;
+animation-delay: 0.5s;
 }
 .wave:nth-child(7){
-  animation-delay: 0.6s;
+animation-delay: 0.6s;
 }
 .wave:nth-child(8){
-  animation-delay: 0.7s;
+animation-delay: 0.7s;
 }
 .wave:nth-child(9){
-  animation-delay: 0.8s;
+animation-delay: 0.8s;
 }
 .wave:nth-child(10){
-  animation-delay: 0.9s;
+animation-delay: 0.9s;
 }
 @keyframes wave {
-  0%{
-      transform: scale(0);
+0%{
+    transform: scale(0);
+}
+50%{
+    transform: scale(1);
+}
+100%{
+    transform: scale(0);
+}
+}
+@media  (max-width:768px){
+  h2{
+    font-size: 28px;
   }
-  50%{
-      transform: scale(1);
+  .container{
+    margin: 2vh !important;
   }
-  100%{
-      transform: scale(0);
+  button{
+    padding: 0.1vh 0.2vh !important;
+    height: 8vh;
+    font-size: 0.9rem !important;
   }
-  
+  .btn-style{
+    margin: 2vh !important;
+  }
 }
