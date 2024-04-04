@@ -154,7 +154,10 @@ animation-delay: 0.9s;
     margin: 2vh !important;
   }
   .btn-success{
-    width:15vw;
+    width:20vw;
     height:10vh;
+  }
+  #text{
+    margin: 10% 2%;
   }
 }

@@ -30,7 +30,7 @@ function App() {
          </div>
       <br/>
       <div className='container'>
-          <div className='card shadow-lg z-5 rounded-4'>
+          <div className='card shadow-lg z-5 rounded-4' id='text'>
             <div className='card-body'>
               <div className='main-content'>
                       {transcript}
