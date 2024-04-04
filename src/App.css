@@ -153,4 +153,8 @@ animation-delay: 0.9s;
   .btn-style{
     margin: 2vh !important;
   }
+  .btn-success{
+    width:7vw;
+    height:5vh;
+  }
 }
