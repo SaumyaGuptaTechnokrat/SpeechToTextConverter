@@ -158,7 +158,8 @@ animation-delay: 0.9s;
     height:10vh;
   }
   #text{
-    margin: 10% 2%;
+    margin-right: 5%;
+    margin-left: 2%;
   }
   
 }
