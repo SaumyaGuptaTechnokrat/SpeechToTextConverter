@@ -47,11 +47,17 @@ function App() {
           
           <CopyToClipboard text={transcript} onCopy={()=>setCopied}>
                       <button className='btn btn-success' onClick={handleCopied}>
-                          {copied ? 'Copied!' : 'Copy to clipboard'}
+                          {copied ? <span class="material-symbols-outlined">
+done
+</span>: <span class="material-symbols-outlined">
+content_copy
+</span>}
                       </button>
         </CopyToClipboard>
-        <button className='btn btn-success' onClick={startListening}>Start Listening</button>
-          <button className='btn btn-success' onClick={SpeechRecognition.stopListening}>Stop Listening</button>
+        <button className='btn btn-success' onClick={startListening}><span class="material-symbols-outlined">keyboard_voice</span></button>
+          <button className='btn btn-success' onClick={SpeechRecognition.stopListening}><span class="material-symbols-outlined">
+mic_off
+</span></button>
 
         </div>
 
