@@ -143,7 +143,7 @@ animation-delay: 0.9s;
     font-size: 28px;
   }
   .container{
-    margin: 2vh !important;
+    margin: 2% !important;
   }
   button{
     padding: 0.1vh 0.2vh !important;
@@ -160,4 +160,5 @@ animation-delay: 0.9s;
   #text{
     margin: 10% 2%;
   }
+  
 }
