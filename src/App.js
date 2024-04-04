@@ -33,7 +33,7 @@ function App() {
           <div className='card shadow-lg z-5 rounded-4' id='text'>
             <div className='card-body'>
               <div className='main-content'>
-                      <textarea className='transcript'  >{transcript}</textarea>
+              {transcript}
               
               </div>
             </div>
