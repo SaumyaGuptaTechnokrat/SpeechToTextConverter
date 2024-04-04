@@ -88,6 +88,12 @@ button:hover {
   border: 0.3px solid rgb(43, 45, 56, 0.3);
   outline: none;
 }
+.transcript{
+  border: none;
+  height: auto;
+  max-width: 50rem;
+  width: 100%;
+}
 .wave-container{
   display: flex;
   justify-content: center;
