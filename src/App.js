@@ -44,10 +44,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={
+        <Route path="/SpeechToTextConverter" element={
           <div className="container-fluid">
             <div className='heading'>
               <h1>Speech To Text Converter</h1>
+              
             </div>
             <br />
             <div className='container'>

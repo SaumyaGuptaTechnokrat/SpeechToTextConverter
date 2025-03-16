@@ -1,5 +1,5 @@
 {
-  "homepage": "http://SaumyaGuptaTechnokrat.github.io/SpeechToTextConverter",
+  "homepage": "http://saumyaguptatechnokrat.github.io/SpeechToTextConverter",
   "name": "speechtotext",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +12,7 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.26.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-speech-recognition": "^3.10.0",
     "react-use-clipboard": "^1.0.9",
     "wavesurfer-react": "^2.2.3",
